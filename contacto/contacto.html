@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Web</title>
+    <link rel="icon" href="./iconos/cuchillo.webp" type="image/x-icon">
+    <link rel="stylesheet" href="contacto.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-wrapper">
+            <h2 class="subtitle">Contactame!</h2>
+            <p class="paragraph">Si estas interesado en alguno de mis servicios, no dudes en escribirme o ir a mis redes sociales.</p>
+            <form action="guardar_contacto.php" method="post" class="form-container">
+                <div class="form-field">
+                    <input type="text" name="nombre" placeholder="Jugador" required>
+                </div>
+                <div class="form-field">
+                    <input type="email" name="correo" placeholder="Correo Electronico" required>
+                </div>
+                <div class="form-field">
+                    <input type ="text" name="asunto" placeholder="Asunto">
+                </div>
+                <div class="form-field">
+                    <textarea name="mensaje" rows="4" placeholder="Mensaje" required></textarea>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+        <div class="redes-sociales">
+            <a href="https://wa.me/999062173?" class="social-button"><img src="./iconos/wasa.png" alt="Whatssap"></a>
+            <a href="https://twitter.com/XdParcky" class="social-button"><img src="./iconos/twitter.png" alt="Twitter"></a>
+            <a href="https://www.instagram.com/lu1sticacala/" class="social-button"><img src="./iconos/instagram.png" alt="Instagram"></a>
+        </div>
+    </div>
+    <footer class="botones">
+      <ul>
+        <li>
+          <a href="../portada/porta.html" class="boton">
+            <img src="./iconos/inicio.png" alt="Botón 1" class="imagen-normal">
+            <img src="./iconos/corazon.png" alt="Botón 1" class="imagen-hover">
+            <span>INICIO</span>
+          </a>
+        </li>
+        <li>
+          <a href="../acerca/acerca_de_mi.html" class="boton">
+            <img src="./iconos/acerca.png" alt="Botón 2" class="imagen-normal">
+            <img src="./iconos/corazon.png" alt="Botón 2" class="imagen-hover">
+            <span>ACERCA DE MI</span>
+          </a>
+        </li>
+        <li>
+          <a href="../habilidades/habilidades.html" class="boton">
+            <img src="./iconos/habilidades.png" alt="Botón 3" class="imagen-normal">
+            <img src="./iconos/corazon.png" alt="Botón 3" class="imagen-hover">
+            <span>HABILIDADES</span>
+          </a>
+        </li>
+        <li>
+          <a href="../proyectos/proyectos.html" class="boton">
+            <img src="./iconos/proyectos.png" alt="Botón 2" class="imagen-normal">
+            <img src="./iconos/corazon.png" alt="Botón 2" class="imagen-hover">
+            <span>PROYECTOS</span>
+          </a>
+        </li>
+        <li>
+          <a href="../contacto/contacto.html" class="boton">
+            <img src="./iconos/contacto.png" alt="Botón 4" class="imagen-normal">
+            <img src="./iconos/corazon.png" alt="Botón 4" class="imagen-hover">
+            <span>CONTACTO</span>
+          </a>
+        </li>
+      </ul>
+    </footer>
+</body>
+</html>

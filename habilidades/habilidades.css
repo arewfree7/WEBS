@@ -1,0 +1,144 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+background-image: url(portal.jpg) ;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  align-items: center;
+  background-attachment: fixed;
+}
+@font-face {
+  font-family:arcade;
+  src: url('../karmatic.ttf');
+}
+@font-face {
+  font-family:classic;
+  src: url('../ARCADECLASSIC.TTF');
+}
+
+
+@font-face {
+  font-family:sans;
+  src: url('../SANS.ttf');
+}
+.container {
+  text-align: center;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.subtitle {
+  font-size: 5vw;
+  margin-bottom: 20px;
+  text-align: left; /* Alinea el texto del subtítulo a la izquierda */
+  padding-left: 70px; /* Agrega un margen izquierdo de 30px */
+  font-family: classic;
+  color: white;
+  margin-top: 90px;
+}
+
+
+.image-container img {
+  max-width: 142px;
+  margin: 5px;
+}
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Estilos para los botones */
+.image-container a {
+  margin: 10px;
+  display: inline-block;
+  transition: transform 0.2s ease-out; /* Agregamos una transición para el efecto de agrandamiento */
+}
+
+.image-container a:hover {
+  transform: scale(1.2); /* Aplicamos la transformación de escala al pasar el mouse sobre el botón */
+}
+
+.botones ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-left: 20px;
+}
+
+.boton {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  margin-top: 50px;
+  border: 3px solid #fa7a12; /* Color rojo para el borde inicial */
+  padding: 5px;
+  transition: border-color 0.1s, color 0.3s; /* Agregamos transición para suavizar el cambio de color */
+  text-decoration: none;
+  transition: transform 0.2s;
+}
+
+.boton:hover {
+  cursor: pointer;
+  border-color: yellow; /* Color rojo para el borde al pasar el mouse */
+  transform: scale(1.05);
+}
+
+.boton .imagen-normal {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  margin-left: 2px;
+}
+
+.boton span {
+  font-size: 32px;
+  font-family: classic;
+  color: #fa7a12; /* Color del texto inicial */
+  transition: color 0.1s; /* Agregamos transición para suavizar el cambio de color */
+}
+
+.boton:hover span {
+  color: yellow; /* Color rojo para el texto al pasar el mouse */
+}
+
+
+/* Ocultamos la imagen de hover al inicio */
+.imagen-hover {
+  display: none;
+}
+
+/* Mostramos la imagen de hover al pasar el mouse sobre el botón */
+.boton:hover .imagen-normal {
+  display: none;
+}
+
+.boton:hover .imagen-hover {
+  display: block;
+}
+
+/* Ajusta el tamaño de las imágenes según tus necesidades */
+.imagen-hover {
+  width: 20px;
+  height: 20px;
+  margin-right: 12px;
+  margin-left: 6px;
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+  .image-container img {
+      max-width: 100px;
+  }
+}

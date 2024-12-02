@@ -1,0 +1,166 @@
+@font-face {
+  font-family:arcade;
+  src: url('../karmatic.ttf');
+}
+@font-face {
+  font-family:classic;
+  src: url('../ARCADECLASSIC.TTF');
+}
+@font-face {
+  font-family:retro;
+  src: url('../Retro\ Gaming.ttf');
+}
+
+@font-face {
+  font-family:sans;
+  src: url('../SANS.ttf');
+}
+
+.color1 {color: #120d19;}
+.color2 {color: #12374e;}
+.color3 {color: #15698e;}
+.color4 {color: #20a7d8;}
+.color5 {color: #20dbd8;}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans;
+  height: 100vh;
+}
+
+.container{
+  height: 100%;
+}
+header {
+  background-color: black;
+  text-align: center;
+  padding: 10px 0;
+  height: 20%;
+}
+
+.palabras {
+  display: flex;
+  justify-content: center;
+  padding: 25px;
+  background-color: black;
+}
+
+.palabras h1 {
+  font-size: 3em;
+  margin: 20px;
+  color:#3ab5e2;
+
+}
+
+.contenido {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000;
+  color: white;
+  height: 60%;
+
+  padding: 20px;
+}
+
+.imagen-y-parrafo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1000px;
+  flex-direction: column;
+  margin: 10px 0 10px;
+  margin-top: 100px;
+  flex-wrap: wrap;
+}
+
+.imagen-y-parrafo img {
+  transform: scale(1);
+  margin-right: 20px;
+}
+
+.imagen-y-parrafo p {
+  font-size: 1.5em;
+  line-height: 1.5;
+  margin-top: 30px;
+  padding: 20px;
+  border: 3px solid white;
+}
+.botones{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.botones ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 20px;
+}
+
+.boton {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  border: 3px solid #fa7a12; /* Color rojo para el borde inicial */
+  padding: 5px;
+  transition: border-color 0.1s, color 0.3s; /* Agregamos transición para suavizar el cambio de color */
+  text-decoration: none;
+  transition: transform 0.2s;
+  margin-top: 30px;
+  margin-bottom: 20px;
+
+}
+.boton:hover {
+  cursor: pointer;
+  border-color: yellow; /* Color rojo para el borde al pasar el mouse */
+  transform: scale(1.05);
+}
+
+
+.boton .imagen-normal {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  margin-left: 2px;
+}
+
+.boton span {
+  font-size: 2.3em;
+  font-family: classic;
+  color: #fa7a12; /* Color del texto inicial */
+  transition: color 0.1s; /* Agregamos transición para suavizar el cambio de color */
+}
+
+.boton:hover span {
+  color: yellow; /* Color rojo para el texto al pasar el mouse */
+}
+footer{
+  height: 20%;
+ background-color: black;
+}  /* Ocultamos la imagen de hover al inicio */
+.imagen-hover {
+  display: none;
+}
+
+/* Mostramos la imagen de hover al pasar el mouse sobre el botón */
+.boton:hover .imagen-normal {
+  display: none;
+}
+
+.boton:hover .imagen-hover {
+  display: block;
+}
+
+/* Ajusta el tamaño de las imágenes según tus necesidades */
+.imagen-hover {
+  width: 25px;
+  height: 25px;
+  margin-right: 12px;
+  margin-left: 6px;
+}

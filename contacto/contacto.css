@@ -1,0 +1,194 @@
+@font-face {
+    font-family:arcade;
+    src: url('../karmatic.ttf');
+  }
+  @font-face {
+    font-family:classic;
+    src: url('../ARCADECLASSIC.TTF');
+  }
+  @font-face {
+    font-family:retro;
+    src: url('../Retro\ Gaming.ttf');
+  }
+
+  @font-face {
+    font-family:sans;
+    src: url('../SANS.ttf');
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    font-family: retro;
+    height: 100vh;
+    flex-direction: column;
+    color: white;
+    background-image: url(./iconos/luna.gif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+    .container {
+    text-align: left;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    backdrop-filter: blur(5px);
+}
+
+.subtitle {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.paragraph {
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-field {
+    margin-bottom: 20px;
+}
+
+input::placeholder, textarea::placeholder {
+  color: #030303; /* Cambia el color del placeholder a blanco (#ffffff) o el color que prefieras */
+}
+
+input, textarea {
+    width: 96%;
+    padding: 10px;
+    font-size: 0.9em;
+    border: 1px solid #0a0a0a;
+    background-color: #c9eff5;
+    font-family: retro;
+    border-radius: 5px;
+}
+footer{
+  height: 19.7vh;
+}
+button {
+    padding: 10px 20px;
+    font-size: 17px;
+    background-color: #3e34d3;
+    color: #fff;
+    border: none;
+    font-family: retro;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #5e6cac;
+}
+
+/* Estilos para el contenedor del formulario */
+.form-wrapper {
+    flex: 1; /* El formulario ocupará el espacio restante */
+}
+
+.form-wrapper h2{
+  color: #62c8f4;
+}
+/* Estilos para el contenedor de botones */
+.redes-sociales {
+    display: flex;
+    flex-direction: column;
+    margin-top:17%;
+    margin-left: 10px;
+}
+
+/* Estilos para los botones */
+.social-button {
+    margin-bottom: 5px;
+    transition: transform 0.2s;
+}
+
+/* Estilos para las imágenes de los botones */
+.social-button img {
+    width: 40px;
+    height: 40px;
+}
+
+.social-button:hover {
+  transform: scale(1.2); /* Escalamos un poco el botón al pasar el mouse */
+}
+.botones{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.botones ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 20px;
+  padding: 0;
+}
+
+.boton {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  border: 3px solid #fa7a12; /* Color rojo para el borde inicial */
+  padding: 5px;
+  transition: border-color 0.1s, color 0.3s; /* Agregamos transición para suavizar el cambio de color */
+  text-decoration: none;
+  transition: transform 0.2s;
+  margin-bottom: 20px;
+
+}
+.boton:hover {
+  cursor: pointer;
+  border-color: yellow; /* Color rojo para el borde al pasar el mouse */
+  transform: scale(1.05);
+}
+
+.boton .imagen-normal {
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+  margin-left: 2px;
+}
+
+.boton span {
+  font-size: 25px;
+  font-family: classic;
+  color: #fa7a12; /* Color del texto inicial */
+  transition: color 0.1s; /* Agregamos transición para suavizar el cambio de color */
+}
+
+.boton:hover span {
+  color: yellow; /* Color rojo para el texto al pasar el mouse */
+}
+
+
+/* Ocultamos la imagen de hover al inicio */
+.imagen-hover {
+  display: none;
+}
+
+/* Mostramos la imagen de hover al pasar el mouse sobre el botón */
+.boton:hover .imagen-normal {
+  display: none;
+}
+
+.boton:hover .imagen-hover {
+  display: block;
+}
+
+/* Ajusta el tamaño de las imágenes según tus necesidades */
+.imagen-hover {
+  width: 18px;
+  height: 18px;
+  margin-right: 12px;
+  margin-left: 6px;
+}

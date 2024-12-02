@@ -1,0 +1,262 @@
+@font-face {
+    font-family:arcade;
+    src: url('../karmatic.ttf');
+  }
+  @font-face {
+    font-family:classic;
+    src: url('../ARCADECLASSIC.TTF');
+  }
+  @font-face {
+    font-family:retro;
+    src: url('../Retro\ Gaming.ttf');
+  }
+
+  @font-face {
+    font-family:sans;
+    src: url('../SANS.ttf');
+  }
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: retro;
+    background-image: linear-gradient(to right top, #010103, #030212, #010003, #070a1a, #1a133e);
+}
+
+.container {
+    text-align: left;
+    max-width: 940px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 2px solid #333;
+    background-image: linear-gradient(to right top, #24a0b3, #2ea3e7, #0db5ed, #13b5ce, #49cee3);
+    border-radius: 18px;
+
+}
+
+.main-title {
+    text-align: left;
+    font-size: 2em;
+    margin-bottom: 30px;
+    margin-left: 20px;
+}
+
+/* Estilos para la imagen con información */
+.image-with-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    background-image: linear-gradient(to left, #10eb2a, #14ec23, #1ced23, #3fe83f, #32eb38);
+    transition: transform 0.3s ease;
+    margin: 20px; /* Margen para separar los elementos */
+    padding: 10px; /* Ajustamos el padding para que el contenido esté más cerca del borde */
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box; /* Incluimos el padding en el ancho y alto del contenedor */
+    border-radius: 18px;
+
+}
+
+
+.image-with-info:hover {
+    transform: scale(1.05); /* Escalamos el contenedor en 5% cuando se hace hover */
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.info {
+    flex: 1;
+    text-align: left;
+    margin-left: 20px;
+}
+
+h3 {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 0.9em;
+    line-height: 1.6;
+}
+/* Estilos para el carrusel de 2 imágenes */
+.carrusel-2 {
+    width: 400px; /* Ajusta el ancho del contenedor para 2 imágenes */
+    height: auto;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.carrusel-2 ul {
+    display: flex;
+    padding: 0;
+    width: 200%; /* Ajusta el ancho total del carrusel según la cantidad de imágenes */
+    animation: slide-2 8s infinite alternate ease-in-out;
+
+}
+
+.carrusel-2 li {
+    width: 50%; /* Ajustamos el ancho del contenedor para 2 imágenes */
+    list-style: none;
+}
+
+.carrusel-2 img {
+    width: 100%;
+    border-radius: 18px;
+
+}
+
+@keyframes slide-2 {
+    0% { margin-left: 0; }
+    50% { margin-left: 0; }
+
+    60% { margin-left: -100%; }
+    100% { margin-left: -100%; }
+}
+
+/* Estilos para el carrusel de 4 imágenes */
+.carrusel-5 {
+    width: 400px; /* Ajusta el ancho del contenedor para 5 imágenes */
+    height: auto;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.carrusel-5 ul {
+    display: flex;
+    padding: 0;
+    width: 500%; /* Ajusta el ancho total del carrusel según la cantidad de imágenes */
+    animation: slide-5 20s infinite alternate ease-in-out;
+}
+
+.carrusel-5 li {
+    width: 20%; /* Ajustamos el ancho del contenedor para 5 imágenes */
+    list-style: none;
+}
+
+.carrusel-5 img {
+    width: 100%;
+    border-radius: 18px;
+
+}
+
+@keyframes slide-5 {
+    0% { margin-left: 0; }
+    20% { margin-left: 0; }
+
+    25% { margin-left: -100%; }
+    40% { margin-left: -100%; }
+
+    45% { margin-left: -200%; }
+    60% { margin-left: -200%; }
+
+    65% { margin-left: -300%; }
+    80% { margin-left: -300%; }
+
+    85% { margin-left: -400%; }
+    100% { margin-left: -400%; }
+}.carrusel-3 {
+    width: 400px; /* Ajusta el ancho del contenedor para 3 imágenes */
+    height: auto;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.carrusel-3 ul {
+    display: flex;
+    padding: 0;
+    width: 300%; /* Ajusta el ancho total del carrusel según la cantidad de imágenes */
+    animation: slide-3 12s infinite alternate ease-in-out;
+}
+
+.carrusel-3 li {
+    width: 33.33%; /* Ajustamos el ancho del contenedor para 3 imágenes */
+    list-style: none;
+}
+
+.carrusel-3 img {
+    width: 100%;
+    border-radius: 18px;
+
+}
+
+@keyframes slide-3 {
+    0% { margin-left: 0; }
+    33.33% { margin-left: 0; }
+
+    40% { margin-left: -100%; }
+    66.66% { margin-left: -100%; }
+
+    75% { margin-left: -200%; }
+    100% { margin-left: -200%; }
+}
+
+.botones ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    justify-content: center;
+flex-wrap: wrap;
+  }
+  
+  .boton {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    margin-top: 50px;
+    border: 3px solid #fa7a12; /* Color rojo para el borde inicial */
+    padding: 5px;
+    transition: border-color 0.1s, color 0.3s; /* Agregamos transición para suavizar el cambio de color */
+    text-decoration: none;
+    transition: transform 0.2s;
+  
+  
+  }
+  
+  .boton:hover {
+    cursor: pointer;
+    border-color: yellow; /* Color rojo para el borde al pasar el mouse */
+    transform: scale(1.05);
+  }
+  
+  .boton .imagen-normal {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    margin-left: 2px;
+  }
+  
+  .boton span {
+    font-size: 32px;
+    font-family: classic;
+    color: #fa7a12; /* Color del texto inicial */
+    transition: color 0.1s; /* Agregamos transición para suavizar el cambio de color */
+  }
+  
+  .boton:hover span {
+    color: yellow; /* Color rojo para el texto al pasar el mouse */
+  }
+  
+  
+  /* Ocultamos la imagen de hover al inicio */
+  .imagen-hover {
+    display: none;
+    }
+  
+  /* Mostramos la imagen de hover al pasar el mouse sobre el botón */
+  .boton:hover .imagen-normal {
+    display: none;
+  }
+  
+  .boton:hover .imagen-hover {
+    display: block;
+  }
+  
+  /* Ajusta el tamaño de las imágenes según tus necesidades */
+  .imagen-hover {
+    width: 20px;
+    height: 20px;
+    margin-right: 12px;
+    margin-left: 6px;
+  }
+  
+  
